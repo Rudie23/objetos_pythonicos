@@ -11,9 +11,6 @@ import operator
 
 
 def ordenar_por_nota_e_nome(alunos):
-    alunos_ordenados_nota = sorted(alunos, key=operator.itemgetter(1))
-    alunos_ordenados_nome = sorted(alunos_ordenados_nota, key=operator.itemgetter(0))
-    return alunos_ordenados_nome
-
-
-
+   alunos_ordenados_nota = sorted(alunos, key=operator.itemgetter(1))
+   alunos_ordenados_nome = sorted(alunos_ordenados_nota, key=operator.itemgetter(0))
+   return list(alunos_ordenados_nome)
