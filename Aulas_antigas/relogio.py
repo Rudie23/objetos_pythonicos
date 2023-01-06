@@ -11,7 +11,7 @@ relogio['text'] = strftime('%H:%M:%S')
 def tictac():
     agora = strftime('%H:%M:%S')
     relogio['text'] = agora
-    relogio.after(100, tictac)
+    relogio.after(40, tictac)
 
 
 tictac()
