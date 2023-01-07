@@ -10,7 +10,7 @@ def logar(f, fmt='%H:%M:%S', *args, **kw):
     return f(*args, **kw)
 
 
-@logar()
+@logar
 def mochileiro():
     return 42
 
