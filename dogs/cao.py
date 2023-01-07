@@ -35,7 +35,7 @@ class Pequines(Cao):
     nervoso = True
 
 
-class GrandeMixin(Cao):
+class GrandeMixin:
     """ Mixin: muda o latido"""
 
     def latir(self, vezes=1):
