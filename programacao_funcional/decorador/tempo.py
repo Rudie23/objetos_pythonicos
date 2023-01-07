@@ -17,7 +17,7 @@ def logar(fn=None, *, fmt='%H:%M:%S'):  # O * indica que o parametro fmt deve se
     return decorator
 
 
-@logar  # O nome da função será modificado pela função dentro do decorator
+@logar()  # O nome da função será modificado pela função dentro do decorator
 def mochileiro():
     return 42
 
