@@ -1,6 +1,6 @@
 from collections import namedtuple
 
-# Cria uma classe e os atributos dela
+
 Carta = namedtuple('Carta', 'valor naipe')
 
 
