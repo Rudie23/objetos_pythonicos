@@ -1,21 +1,40 @@
+"""
+    >>> t = Tombola()
+    >>> t.carregada()
+    False
+    >>> bolas = 'ABC'
+    >>> t.carregar(bolas)
+    >>> t.carregada()
+    True
+    >>> t.misturar()
+    >>> t.sortear() in bolas
+    True
+    >>> t.sortear() in bolas
+    True
+    >>> t.sortear() in bolas
+    True
+    >>> t.carregada()
+    False
+"""
+
 from random import shuffle
 
 
 class Tombola:
-    def __int__(self):
-        self.items = []
-
-    def carregar(self, lista):
-        self.lista = lista
+    def __init__(self):
+        self.itens = []
 
     def carregada(self):
-        return bool(self.items)
+        return bool(self.itens)
+
+    def carregar(self, itens):
+        self.itens = list(itens)
 
     def misturar(self):
-        shuffle(self.items)
+        shuffle(self.itens)
 
     def sortear(self):
-        return self.items.pop()
+        return self.itens.pop()
 
     def __call__(self):
-        return self.sortear() 
+        return self.sortear()
