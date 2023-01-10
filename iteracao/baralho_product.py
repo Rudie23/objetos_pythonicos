@@ -1,7 +1,5 @@
-from collections import namedtuple
-
-# Cria uma classe e os atributos dela
-Carta = namedtuple('Carta', 'valor naipe')
+from itertools import product
+from iteracao.carta import Carta
 
 
 class Baralho:
@@ -9,7 +7,7 @@ class Baralho:
     naipes = 'paus ouros copas espadas'.split()
 
     def __init__(self):
-        self.cartas = [Carta(v, n) for n in self.naipes for v in self.valores]
+        self.cartas = [Carta(v, n) for n, v in product(self.naipes, self.valores)]
 
     def __len__(self):
         return len(self.cartas)

@@ -5,3 +5,7 @@ class Carta:
 
     def __repr__(self):
         return 'Carta(valor=%r, naipe=%r)' % (self.valor, self.naipe)
+
+
+if __name__ == '__main__':
+    print(Carta('A', 'Paus'))
