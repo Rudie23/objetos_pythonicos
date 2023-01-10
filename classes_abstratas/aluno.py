@@ -31,4 +31,4 @@ class Aluno:
             # acontece quando nascimento é 29/fev e ano atual não é bissexto
             niver = date(hoje.year, 3, 1)
         anos = hoje.year - self.data_nasc.year
-        return anos if niver <= hoje else anos - 1
+        return anos if niver <= hoje else anos - 1 
