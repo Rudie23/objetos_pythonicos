@@ -38,3 +38,4 @@ nervoso, ele sempre late duas vezes mais::
     >>> rex.nervoso = True
     >>> rex.latir(3)
     Rex: Au! Au! Au! Au! Au! Au!
+

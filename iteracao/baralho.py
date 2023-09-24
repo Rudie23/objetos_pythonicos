@@ -1,4 +1,11 @@
-from iteracao.carta import Carta
+
+class Carta:
+    def __init__(self, valor, naipe):
+        self.valor = valor
+        self.naipe = naipe
+
+    def __repr__(self):
+        return f'Carta(valor={self.valor}, naipe={self.naipe})'
 
 
 class Baralho:
@@ -6,7 +13,7 @@ class Baralho:
     naipes = 'paus ouros copas espadas'.split()
 
     def __init__(self):
-        self.cartas = [Carta(v, n) for n in self.naipes for v in self.valores]
+        self.cartas = [Carta(valor, naipe) for naipe in self.naipes for valor in self.valores]
 
     def __len__(self):
         return len(self.cartas)
