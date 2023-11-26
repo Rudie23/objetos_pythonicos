@@ -10,9 +10,9 @@ def fabrica_de_contador():
 
 
 contador = fabrica_de_contador()
-# contador_2 = fabrica_de_contador()
+contador_2 = fabrica_de_contador()
 print(contador())
 print(contador())
 print(contador())
-# print(contador_2())
-# print(contador_2())
+print(contador_2())
+print(contador_2())

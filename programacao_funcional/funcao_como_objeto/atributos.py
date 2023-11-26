@@ -1,5 +1,6 @@
 """
 Python 3.11.1 (main, Dec 14 2022, 16:23:47) [GCC 12.2.1 20221121 (Red Hat 12.2.1-4)] on linux
+Não quero investigar o retorno da função, mas os seus atributos
 from programacao_funcional.funcao_como_objeto.atributos import dobro
 for p in dir(dobro):
     print(p)
